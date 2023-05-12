@@ -1,16 +1,7 @@
-# This is a sample Python script.
+#ДЗ на понедельник (Ivanov_Lesson_14.py):
+# Простейший калькулятор c введёнными двумя числами вещественного типа.
+# Ввод с клавиатуры: операции + - * / и два числа. Операции являются функциями.
+# Обработать ошибку: “Деление на ноль”
+# Ноль использовать в качестве завершения программы (сделать как отдельную операцию).
+# Работу загружаем в репозиторий гита. Скидываем ссылку НА ФАЙЛ!
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
