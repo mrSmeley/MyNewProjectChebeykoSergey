@@ -1,19 +1,24 @@
-#ДЗ на понедельник (Ivanov_Lesson_14.py):
+# ДЗ на понедельник (Ivanov_Lesson_14.py):
 # Простейший калькулятор c введёнными двумя числами вещественного типа.
 # Ввод с клавиатуры: операции + - * / и два числа. Операции являются функциями.
 # Обработать ошибку: “Деление на ноль”
 # Ноль использовать в качестве завершения программы (сделать как отдельную операцию).
 # Работу загружаем в репозиторий гита. Скидываем ссылку НА ФАЙЛ!
 
-def calc_op(op,a,b):
-    if op == '+': return a + b
-    elif op == '-': return a - b
-    elif op == '*': return a * b
-    elif op == '/':
+def calc_op(opp, x, y):
+    if opp == '+':
+        return x + y
+    elif opp == '-':
+        return x - y
+    elif opp == '*':
+        return x * y
+    elif opp == '/':
         try:
-            return a / b
+            return x / y
         except:
             return 'на ноль делить нельзя☹! пробуйте ещё раз㋛!'
+
+
 while True:
     print()
     op = input('Введите операцию (+, -, *, /,)➨➨➨➨⬊\nВведите "0"-для завершения программы!): ')
@@ -22,8 +27,8 @@ while True:
     if op in '+-*/':
         while True:
             try:
-                a, b = map(float, input('a, b = ').split() )
-                print(calc_op(op,a,b))
+                a, b = map(float, input('x, y = ').split())
+                print(calc_op(op, a, b))
                 break
             except:
                 pass
