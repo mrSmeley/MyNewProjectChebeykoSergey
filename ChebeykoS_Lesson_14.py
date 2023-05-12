@@ -5,3 +5,25 @@
 # Ноль использовать в качестве завершения программы (сделать как отдельную операцию).
 # Работу загружаем в репозиторий гита. Скидываем ссылку НА ФАЙЛ!
 
+def calc_op(op,a,b):
+    if op == '+': return a + b
+    elif op == '-': return a - b
+    elif op == '*': return a * b
+    elif op == '/':
+        try:
+            return a / b
+        except:
+            return 'на ноль делить нельзя☹! пробуйте ещё раз㋛!'
+while True:
+    print()
+    op = input('Введите операцию (+, -, *, /,)➨➨➨➨⬊\nВведите "0"-для завершения программы!): ')
+    if op == '0':
+        break
+    if op in '+-*/':
+        while True:
+            try:
+                a, b = map(float, input('a, b = ').split() )
+                print(calc_op(op,a,b))
+                break
+            except:
+                pass
