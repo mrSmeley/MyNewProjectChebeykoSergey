@@ -71,3 +71,4 @@ if len(data_tbl_int) > 5:
 else:
     cursor.execute('''UPDATE TBL_TXT SET col='hello' WHERE col=?''',(data_tbl_txt[0][0],))
     conn.commit()
+# закинуть на GitHub
